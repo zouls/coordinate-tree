@@ -50,3 +50,14 @@
 这个时候该线程初始化类的过程对于另外一个线程是不可见的(因为加了锁),所以这个时候即使发生了指令重排也无所谓
 ```
 
+
+
+单例的源码实例
+
+Runtime: 饿汉式
+
+DeskTop: 容器单例
+
+spring: AbstractFactoryBean:
+
+mybatis: ErrorContext: ThreadLocal
