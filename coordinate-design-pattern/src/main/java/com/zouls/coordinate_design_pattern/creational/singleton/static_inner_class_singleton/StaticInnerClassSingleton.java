@@ -20,6 +20,10 @@ public class StaticInnerClassSingleton {
         return InnerClass.staticInnerClassSingleton;
     }
 
+    /**
+     * 这个构造方法里面抛异常是为了防御通过反射来构造多个单例对象
+     * 但是这个只适用于在类加载的时候就已经初始化好了单例对象的模式
+     */
     private StaticInnerClassSingleton() {
         if (InnerClass.staticInnerClassSingleton != null) {
             throw new RuntimeException("单例构造器禁止反射调用");

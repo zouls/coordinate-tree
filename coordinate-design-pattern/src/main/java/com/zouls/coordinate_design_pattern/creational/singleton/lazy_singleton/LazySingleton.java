@@ -9,6 +9,14 @@ package com.zouls.coordinate_design_pattern.creational.singleton.lazy_singleton;
 public class LazySingleton {
     private static LazySingleton lazySingleton = null;
 
+    /**
+     * 这个通过反射创建的话就跟创建的顺序有关了
+     * 如果用反射创建之前没有创建过对象就不会报错
+     * 反之则会报错
+     * 这里加计数器或者flag之类的其实意义不大,反射依然可以修改
+     *
+     * 总的来说就是如果反射先创建就可以不报错,就可以破坏改单例
+     */
     private LazySingleton() {
         if (lazySingleton != null) {
             throw new RuntimeException("单例构造器禁止反射调用");
