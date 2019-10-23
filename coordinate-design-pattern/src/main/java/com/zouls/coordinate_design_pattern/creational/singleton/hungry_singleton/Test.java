@@ -1,7 +1,6 @@
 package com.zouls.coordinate_design_pattern.creational.singleton.hungry_singleton;
 
 import com.zouls.coordinate_design_pattern.creational.singleton.lazy_singleton.LazySingleton;
-import com.zouls.coordinate_design_pattern.creational.singleton.static_inner_class_singleton.StaticInnerClassSingleton;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
