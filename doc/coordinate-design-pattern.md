@@ -61,3 +61,14 @@ DeskTop: 容器单例
 spring: AbstractFactoryBean:
 
 mybatis: ErrorContext: ThreadLocal
+
+建造者模式其实好处就是按需创建,而且名字很直观,把创建方和具体的创建对象通过一个静态内部类进行了解耦,很适合于有多个成员变量的类
+建造者模式实例
+StringBuilder的append方法
+同理StringBuffer也是一样
+guava的
+Immutable类
+cacheBuilder
+spring的BeanDefinitionBuilder
+mybatis
+SqlSessionFactoryBuilder
