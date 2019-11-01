@@ -11,6 +11,7 @@
         <module>coordinate-kafka</module>
         <module>coordinate-design-pattern</module>
         <module>coordinate-concurrent</module>
+        <module>coordinate-jvm</module>
     </modules>
 
     <packaging>pom</packaging>
