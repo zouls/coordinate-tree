@@ -1,8 +1,5 @@
 package com.zouls.coordinate_design_pattern.structural.proxy;
 
-/**
- * Created by geely
- */
 public class OrderDaoImpl implements IOrderDao {
     @Override
     public int insert(Order order) {

@@ -3,14 +3,16 @@ package com.zouls.coordinate_design_pattern.structural.proxy.db;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 /**
- * Created by geely
+ * 这里模拟分库的时候的场景
  */
 public class DynamicDataSource extends AbstractRoutingDataSource {
+    /**
+     * 决定选择哪个数据库
+     */
     @Override
     protected Object determineCurrentLookupKey() {
         return DataSourceContextHolder.getDBType();
     }
-
 
 
 //    <bean id="db0" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -45,7 +47,6 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 //        <!--# 检查连接有效性的SQL语句-->
 //        <property name="validationQuery" value="SELECT 1 FROM dual"/>
 //    </bean>
-
 
 
 //    <bean id="db1" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
