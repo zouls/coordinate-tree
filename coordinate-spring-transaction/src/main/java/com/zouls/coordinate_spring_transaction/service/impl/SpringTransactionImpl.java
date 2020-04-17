@@ -13,7 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class SpringTransactionImpl implements ISpringTransaction {
 
-    /** ExtraAd Dao */
+    /**
+     * ExtraAd Dao
+     */
     private final ExtraAdDao extraAdDao;
 
     @Autowired
@@ -23,7 +25,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>捕捉异常, 导致不能回滚</h2>
-     * */
+     */
     @Override
     @Transactional
     public void CatchExceptionCanNotRollback() {
@@ -41,7 +43,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>捕捉异常并转换异常, 导致不能回滚</h2>
-     * */
+     */
     @Override
     @Transactional
     public void NotRuntimeExceptionCanNotRollback() throws CustomException {
@@ -56,7 +58,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>RuntimeException 异常可以回滚</h2>
-     * */
+     */
     @Override
     @Transactional
     public void RuntimeExceptionCanRollback() {
@@ -67,7 +69,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>指定异常, 可以回滚</h2>
-     * */
+     */
     @Override
     @Transactional(rollbackFor = {CustomException.class})
     public void AssignExceptionCanRollback() throws CustomException {
@@ -84,7 +86,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>在 private 方法上标注 transactional, 事务无效</h2>
-     * */
+     */
     @Transactional
     public void oneSaveMethod() {
 
@@ -95,7 +97,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
      * <h2>Rollback Only</h2>
      * org.springframework.transaction.UnexpectedRollbackException:
      * Transaction silently rolled back because it has been marked as rollback-only
-     * */
+     */
     @Override
     @Transactional
     public void RollbackOnlyCanRollback() throws Exception {
@@ -118,7 +120,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>在private方法上标注transactional, 事务无效</h2>
-     * */
+     */
     @Transactional
     public void anotherOneSaveMethod() {
 
@@ -128,7 +130,7 @@ public class SpringTransactionImpl implements ISpringTransaction {
 
     /**
      * <h2>同一个类中, 一个不标注事务的方法去调用 transactional 的方法, 事务会失效</h2>
-     * */
+     */
     @Override
 //    @Transactional
     public void NonTransactionalCanNotRollback() {

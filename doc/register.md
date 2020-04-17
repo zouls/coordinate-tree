@@ -10,4 +10,4 @@
 
 
 
-![1571231082895](register.assets/1571231082895.png)
+<img src="register.assets/1571231082895.png" alt="1571231082895" style="zoom:50%;" />

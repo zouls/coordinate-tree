@@ -30,7 +30,7 @@ public class ExtraAd {
 
     /**
      * <h2>提供 name 的构造函数</h2>
-     * */
+     */
     public ExtraAd(String name) {
         this.name = name;
     }
