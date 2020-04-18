@@ -1,4 +1,4 @@
-package com.zoulshell.algorithm;
+package com.zoulshell.algorithm.算法题.链表;
 
 //删除链表中等于给定值 val 的所有节点。
 //

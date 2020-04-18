@@ -1,4 +1,4 @@
-package com.zoulshell.algorithm;
+package com.zoulshell.algorithm.算法题.链表;
 
 //编写一个程序，找到两个单链表相交的起始节点。
 //
@@ -69,6 +69,8 @@ public class _160_相交链表 {
     }
 
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+
+        if (headA == null || headB == null) return null;
 
         // 两个指针,遍历两个链表
         ListNode curA = headA;
