@@ -45,4 +45,13 @@ public class Article {
     public void setImags(String imags) {
         this.imags = imags;
     }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", imags='" + imags + '\'' +
+                '}';
+    }
 }

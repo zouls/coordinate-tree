@@ -22,4 +22,13 @@ public class ArticleMemento {
     public String getImags() {
         return imags;
     }
+
+    @Override
+    public String toString() {
+        return "ArticleMemento{" +
+                "title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", imags='" + imags + '\'' +
+                '}';
+    }
 }
