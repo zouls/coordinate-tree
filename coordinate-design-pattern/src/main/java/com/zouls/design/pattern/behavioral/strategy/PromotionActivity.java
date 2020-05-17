@@ -20,7 +20,9 @@ public class PromotionActivity {
     }
 
     public void executePromotionStrategy() {
+        // 前后可以加逻辑
         promotionStrategy.doPromotion();
+        // 前后可以加逻辑
     }
 
 }

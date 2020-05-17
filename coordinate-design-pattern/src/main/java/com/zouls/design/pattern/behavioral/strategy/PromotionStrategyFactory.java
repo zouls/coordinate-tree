@@ -27,6 +27,9 @@ public class PromotionStrategyFactory {
 
     public static PromotionStrategy getPromotionStrategy(String promotionKey) {
         PromotionStrategy promotionStrategy = PROMOTION_STRATEGY_MAP.get(promotionKey);
+        // 其实这里还是可以拓展一下的,如果说这些策略对象是有状体的,在这里可以基于map中获取到的策略进行深拷贝
+        // 可以使用cglib里面的beanCopier之类的工具进行拷贝一份类出来,然后这个方法返回的是拷贝后的类
+        // 具体来说还是看具体的需求,如果没有什么状态共享,只是纯粹的将策略对象当作一个util来使用的话,就直接返回就好了
         return promotionKey == null ? NON_PROMOTION : promotionStrategy;
     }
 
