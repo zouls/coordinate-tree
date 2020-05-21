@@ -1,4 +1,4 @@
-package com.zouls.coordinate_spring_transaction.exception;
+package com.zouls.spring.transaction.exception;
 
 public class CustomException extends Exception {
 

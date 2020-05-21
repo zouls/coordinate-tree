@@ -1,8 +1,8 @@
-package com.zouls.coordinate_spring_transaction.service;
+package com.zouls.spring.transaction.service;
 
-import com.zouls.coordinate_spring_transaction.CoordinateSpringTransactionApplicationTests;
-import com.zouls.coordinate_spring_transaction.exception.CustomException;
-import com.zouls.coordinate_spring_transaction.service.impl.AnotherSpringTransaction;
+import com.zouls.spring.CoordinateSpringTransactionApplicationTests;
+import com.zouls.spring.transaction.exception.CustomException;
+import com.zouls.spring.transaction.service.impl.AnotherSpringTransaction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

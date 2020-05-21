@@ -1,4 +1,4 @@
-package com.zouls.coordinate_spring_transaction;
+package com.zouls.spring.transaction;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

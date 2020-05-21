@@ -1,4 +1,4 @@
-package com.zouls.coordinate_spring_transaction;
+package com.zouls.spring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

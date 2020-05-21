@@ -1,4 +1,4 @@
-package com.zouls.coordinate_spring_transaction.service.impl;
+package com.zouls.spring.transaction.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

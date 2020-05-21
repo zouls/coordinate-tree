@@ -1,6 +1,6 @@
-package com.zouls.coordinate_spring_transaction.service;
+package com.zouls.spring.transaction.service;
 
-import com.zouls.coordinate_spring_transaction.exception.CustomException;
+import com.zouls.spring.transaction.exception.CustomException;
 
 /**
  * <h1>Spring Transactional 测试接口定义</h1>

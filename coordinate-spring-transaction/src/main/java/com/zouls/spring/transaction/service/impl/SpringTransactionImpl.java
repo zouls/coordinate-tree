@@ -1,9 +1,9 @@
-package com.zouls.coordinate_spring_transaction.service.impl;
+package com.zouls.spring.transaction.service.impl;
 
-import com.zouls.coordinate_spring_transaction.dao.ExtraAdDao;
-import com.zouls.coordinate_spring_transaction.entity.ExtraAd;
-import com.zouls.coordinate_spring_transaction.exception.CustomException;
-import com.zouls.coordinate_spring_transaction.service.ISpringTransaction;
+import com.zouls.spring.transaction.dao.ExtraAdDao;
+import com.zouls.spring.transaction.entity.ExtraAd;
+import com.zouls.spring.transaction.exception.CustomException;
+import com.zouls.spring.transaction.service.ISpringTransaction;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

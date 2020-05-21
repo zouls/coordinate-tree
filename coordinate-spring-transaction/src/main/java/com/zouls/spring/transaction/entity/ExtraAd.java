@@ -1,4 +1,4 @@
-package com.zouls.coordinate_spring_transaction.entity;
+package com.zouls.spring.transaction.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
